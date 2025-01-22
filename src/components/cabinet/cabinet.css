@@ -1,0 +1,136 @@
+.cabinet__container{
+    width: 100%;
+}
+.cabinet__title{
+     font-size: 20px;
+     font-weight: 500;
+     margin-bottom: 24px;
+}
+.cabinet__card{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 24px;
+}
+.cabinet__sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cabinet__sidebar p{
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+.cabinet__sidebar p:hover{
+    background-color: #f0f0f0;
+}
+.cabinet__ticket{
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.cabinet__ticket h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.cabinet__form__page{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cabinet__form__page label{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+.cabinet__form__page label.required::after{
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+.cabinet__form__page input{
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.cabinet__form__btn{
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    padding: 5px;
+}
+.cabinet__form__btn button{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    border-radius: 8px;
+}
+.cabinet__form__btn button.active{
+    background: white;
+    color: black;
+    border-color: #1a1a1a;
+}
+.cabinet__form__footer{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabinet__footer__btn{
+    display: flex;
+    gap: 16px;
+}
+.cabinet__footer__btn button{
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cabinet__footer__btn button:first-child{
+    background: white;
+    border: 1px solid #ddd;
+}
+.cabinet__footer__btn button:last-child{
+    background:#1a1a1a;
+    color: white;
+    border: 1px solid #1a1a1a;
+}
+.logout-btn{
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 0;
+}
+.save-btn{
+    position:relative;
+    min-width: 100px;
+    transition: all 0.3s ease;
+}
+.save-btn.saving{
+    background-color: #e5e5e5;
+    cursor: wait;
+}
+.save-btn.saved{
+   background-color: #4caf50;
+   color: white;
+}
+.save-btn.saved span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

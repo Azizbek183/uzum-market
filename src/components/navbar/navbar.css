@@ -1,0 +1,194 @@
+/* Boshqa o'lchamlar uchun umumiy dizayn */
+.navbar__container {
+    width: 100%;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+    position: relative;
+    gap: 33px;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.logo__project > a > img {
+    width: 160px;
+}
+
+.nav__catalog-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.nav__catalog {
+    width: 171px;
+    height: 45px;
+    background-color: #e5e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.nav__catalog:hover {
+    background-color: rgb(150, 150, 190);
+}
+
+.nav__catalog > img {
+    width: 30px;
+}
+
+.nav__catalog > span {
+    font-size: 17px;
+    color: #7f4dff;
+}
+
+.a__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.a__link {
+    width: 120px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.a__link > svg {
+    width: 30px;
+    color: black;
+}
+
+.a__link:hover {
+    background-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.navbar__wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar__placing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navbar__placing > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 13px;
+    gap: 7px;
+}
+
+.navbar__placing a > svg {
+    width: 20px;
+    height: 20px;
+}
+
+.a__link > span {
+    color: black;
+    font-size: 17px;
+}
+
+/* Mobile-first approach */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .navbar__container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo__project > a > img {
+        width: 120px; /* Adjust the logo size */
+    }
+
+    .nav__catalog-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__catalog {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .nav__catalog > span {
+        font-size: 14px;
+    }
+
+    .a__links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .a__link {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .navbar__placing {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* For tablets (screens between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar__container {
+        padding: 0 20px;
+    }
+
+    .logo__project > a > img {
+        width: 140px; /* Adjust the logo size for tablet */
+    }
+
+    .nav__catalog {
+        width: 150px;
+    }
+
+    .a__link {
+        width: 100px;
+    }
+
+    .navbar__placing {
+        gap: 40px;
+    }
+}
+
+/* For screens larger than 1024px (desktop) */
+@media (min-width: 1024px) {
+    .navbar__container {
+        padding: 0 40px;
+    }
+
+    .logo__project > a > img {
+        width: 160px;
+    }
+
+    .a__link {
+        width: 120px;
+    }
+}

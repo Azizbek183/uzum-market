@@ -1,0 +1,32 @@
+ @font-face{
+  font-family: Inter;
+  src: url(./fonts/Inter.ttf);
+} 
+ /* /@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');/ */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Inter !important;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+max-width: 1920px;
+width: 100%;
+}
+.main {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-inline: 40px;
+}

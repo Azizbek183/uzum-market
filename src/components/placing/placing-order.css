@@ -1,0 +1,517 @@
+.placing__order-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.placing__order-title  {
+width: 100%;
+display: flex;
+text-align: start;
+font-size: 25px;
+font-weight: bold;
+}
+.placing__order-card {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.placing__order-left {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+  
+}
+
+.placing__order-address {
+width: 800px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px #ddd;
+         gap: 10px;
+         padding: 20px;
+         border-radius: 8px;
+}
+
+.placing__order-address> label {
+    color: black;
+    font-size: 14px;
+}
+.placing__order-address-box {
+    width: 400px;
+    max-height: 150px;
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 7px;
+}
+.placing__order-address-box-title {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 7px;
+
+}
+.placing__order-address-box-title > span {
+color: black;
+font-size: 14px;
+
+}
+.placing__order-address-box-title>span>b {
+    color: #00AD65;
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+.placing__order-address-box-title  > b{
+color: black;
+    font-size: 13px;
+    font-weight: 400;
+}
+.check__box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+         margin-top: 10px;
+         gap: 3px;
+}
+.placing__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 13px;
+}
+.styled-radio {
+    appearance: none;
+    /* Убираем стандартный стиль радио-кнопки */
+    width: 21px;
+    height: 21px;
+    border: 3px solid #7F4DFF;
+    /* Фиолетовый контур */
+    border-radius: 50%;
+    /* Делаем кнопку круглой */
+    background-color: transparent;
+    /* Прозрачный фон по умолчанию */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.styled-radio:checked {
+    background-color: transparent;
+    /* Оставляем прозрачный фон */
+    border-color: #7F4DFF;
+    /* Цвет контура при выборе */
+}
+
+.styled-radio:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    /* Размер внутреннего круга */
+    height: 12px;
+    background-color: #7F4DFF;
+    /* Фиолетовый центр */
+    border-radius: 50%;
+    /* Делаем круг */
+}
+
+
+.placing__home {
+    width: 400px;
+    display: flex;
+    align-items: start;
+
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+.placing__home-title {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 11px;
+}
+.placing__home-txt {
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+    gap: 7px;
+}.placing__home-txt > p {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.placing__home-txt>  span  {
+    color: black;
+    font-size: 14px;
+}.placing__home  > button {
+    width: 300px;
+    height: 40px;
+    background-color: #F5F7FA;
+    color: black;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+transition: background-color 0.2s ease-in, transform 0.1s ease-in;}
+.placing__home>button:hover {
+background-color: #00000014;
+}
+
+
+.placing__order-right {
+    width: 380px;
+    height: 450px;
+    border: solid 1px #ddd;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+.placing__recipient-container {
+width: 800px;          display: flex;
+         align-items: start;
+         flex-direction: column;
+         gap: 10px;
+         border: solid 1px #ddd;
+         gap: 15px;
+         padding: 20px;
+         border-radius: 8px;
+}
+.placing__recipient-title {
+color: black;
+    font-weight: 600;
+    font-size: 19px;
+}
+.placing__recipient-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+.placing__recipient-inp {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 7px;
+}
+.placing__recipient-inp>label {
+    color: black;
+    font-size: 14px;
+}
+.placing__recipient-inp>input {
+    width: 200px;
+    height: 40px;
+    color: black;
+    font-size: 14px;
+    border-radius:11px;
+    border: none;
+    outline: none;
+    border: solid 1px #ddd;
+    text-indent: 11px;
+}
+.placing__recipient-container > span {
+color: rgba(66, 66, 66, 0.747);
+    font-size: 14px;
+}.placing__recipient-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    /* Расстояние между чекбоксом и текстом */
+}
+
+.placing__recipient-check>input {
+    display: none;
+    /* Скрываем стандартный чекбокс */
+}
+
+.placing__recipient-check>label {
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 4px;
+    /* Радиус углов */
+    background-color: #F5F7FA;
+    /* Базовый цвет */
+    border: 1px solid #7F4DFF;
+    /* Обводка фиолетового цвета */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.placing__recipient-check>input:checked+label {
+    background-color: #7F4DFF;
+    /* Фиолетовый цвет при выборе */
+}
+
+.placing__recipient-check>input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    /* Поворот для создания галочки */
+}
+
+
+.placing__recipient-check>span {
+    font-size: 14px;
+    color: #333;
+    /* Цвет текста */
+    line-height: 1.5;
+    /* Межстрочный интервал */
+}
+.deleviry__basket-product {
+width: 800px;          display: flex;
+         align-items: start;
+         flex-direction: column;
+         gap: 10px;
+         border: solid 1px #ddd;
+         gap: 15px;
+         padding: 20px;
+         border-radius: 8px;
+}
+.deleviry__product-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.deleviry__product-box > img {
+    width: 100px;
+}
+.deleviry-product-info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.deveviry-product-price {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deleviry__product-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deleviry__payment-method{
+width: 800px;     display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px #ddd;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.deleviry__payment-method-box {
+    width: 100%;
+    min-height: 70px;
+    background-color: #F5F7FA;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.deleviry__payment-method-ticket {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.deleviry__payment-method-ticket-title{
+    display: flex;
+    align-items: start;
+    gap: 4px;
+}
+.deleviry__payment-method-ticket-title > img {
+    width: 20px;
+}
+.deleviry__payment-method-ticket-title > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7F4DFF;
+}
+.deleviry__payment-method-ticket > span {
+    color: rgba(66, 66, 66, 0.747);
+         font-size: 14px;
+}
+.deleviry__paymnet-method-card {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.deleviry__paymnet-method-card > img {
+    width: 30px;
+}
+.deleviry__payment-method-ticket > b {
+color: rgba(66, 66, 66, 0.747);
+    font-size: 14px;
+    font-weight: 400;
+}
+.deleviry__payment-method-ticket>pre{
+    color:#FF9720;
+    font-size: 14px;
+    font-weight: 400;
+}
+.deleviry__paymnet-method-card > span {
+    color: #7F4DFF;
+}
+.placing__order-right{
+width: 360px;
+height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px #ddd;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.placing__order-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.placing__order-title > a {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+}
+.placing__order-goods {
+width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.placing__order-goods > span {
+    color: black;
+         font-size: 14px;
+         font-weight: 300;
+}
+.placing__order-goods>P {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.placing__order-right > a {
+width: 320px;
+         height: 45px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #7F4DFF;
+         color: white;
+         font-size: 18px;
+         border: none;
+         cursor: pointer;
+         border-radius: 11px;
+}
+.placing__order-right >a:hover {
+    background-color: #7f4dffe3;
+}
+.placing__order__txt {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    text-align: start;
+}
+.placing__order__txt > span {
+    color: rgb(57, 57, 57);
+         font-size: 13px;
+         font-weight: 300
+}
+.placing__order-promotional-code {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+.placing__order-promotional-btn {
+    width: 320px;
+         height: 45px;
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+         background-color: #F5F7FA;
+         border-radius: 8px;
+    }
+    .placing__order-promotional-btn  > button 
+    {
+         outline: none;
+         border: none;
+         font-size: 14px;
+         color: #222222;
+         background: none;
+        
+        
+    }
+    .placing__promo-modal {
+         position: absolute;
+         bottom: -60px;
+         /* Высота модального окна */
+         left: 0;
+         right: 0;
+         background-color: #fff;
+         padding: 10px 20px;
+         border: 1px solid #ddd;
+         border-radius: 8px;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+         animation: slideUp 0.3s ease-in-out;
+    }
+    
+    .placing__promo-input {
+         width: 100%;
+         padding: 8px 10px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+    font-size: 14px;
+         color: #222222;     border: none;
+         outline: none;
+    }
+    
+    @keyframes slideUp {
+         from {
+              transform: translateY(20px);
+              opacity: 0;
+         }
+    
+         to {
+              transform: translateY(0);
+              opacity: 1;
+         }
+    }
+    

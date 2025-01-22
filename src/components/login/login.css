@@ -1,0 +1,96 @@
+.modal{
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 8px;
+    height: 400px;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    gap: 22px;
+}
+.modal__form>input{
+    width: 350px;
+    height: 45px;
+    text-indent: 8px;
+    outline: none;
+    border: none;
+    background-color: #edeff2;
+    font-size: 19px;
+}
+.modal__form>p{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: -50px;
+
+}
+.modal__form>span{
+    text-align: start;
+    margin-left: -40px;
+}
+.modal__form>button{
+    width: 350px;
+    height: 45px;
+    background-color:#7000ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.modal__form>button:hover{
+    background-color: #7b17fd;
+}
+.modal__form>button:active{
+    background-color: #8a30ff;
+    transform: scale(.99);
+}
+.modal__txt{
+    margin-top: 100px;
+    text-align: center;
+}
+.modal__form__txt{
+    color: black;
+    font-size: 14px;
+}
+.modal__form__txt-blue{
+    color: rgb(65,48,176);
+    cursor: pointer;
+    font-size: 14px;
+}

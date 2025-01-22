@@ -1,0 +1,126 @@
+.product__container{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-top: 22px;
+}
+.product__card{
+    width: 270px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+.image-container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.product__card>.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.favorites__icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    color: #ddd;
+}
+.favorites__icon.favorited{
+    color: #7000ff;
+}
+.product__info{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    text-align: start;
+    flex-direction: column;
+    padding: 2%;
+    gap: 5px;
+}
+.product__info > p {
+    color: #222; /* To'g'ri rang kodi */
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+.product__installment-price{
+    width: 140px;
+    height: 23px;
+    color: #222;
+    background-color:yellow;
+    border-radius: 8px;
+    padding: 3px;
+}
+.product__original-price{
+    text-decoration: line-through;
+    color: gray;
+}
+.product__basket{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product__basket>span{
+    color:#222;
+    font-size: 18px;
+    font-weight: 500;
+}
+.product__basket>button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid .5px #22221b;
+    border-radius: 50px;
+}
+.product__basket>button:hover{
+    background-color: #22221b;
+}
+.product__basket>a>img{
+    width: 30px;
+} 
+
+
+ .favorites__container{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .favorites__title{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    border-bottom: solid 1px #ddd;
+    padding: 10px;
+ }
+ .favorites__title>p{
+    color: #222;
+    font-size: 22px;
+    font-weight: 700;
+ }
+.favorites__card{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 22px;
+    padding: 10px;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    cursor: pointer; 
+}
